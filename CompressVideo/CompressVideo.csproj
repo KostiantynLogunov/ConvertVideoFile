@@ -5,6 +5,46 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\ffprobe.xsd" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libvpx-1080p.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libvpx-1080p50_60.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libvpx-360p.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libvpx-720p.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libvpx-720p50_60.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libvpx-ultrafast.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-baseline.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-fast.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-faster.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-faster_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-fast_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-ipod320.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-ipod640.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-lossless_fast.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-lossless_max.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-lossless_medium.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-lossless_slow.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-lossless_slower.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-lossless_ultrafast.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-main.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-medium.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-medium_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-placebo.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-placebo_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-slow.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-slower.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-slower_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-slow_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-superfast.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-superfast_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-ultrafast.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-ultrafast_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-veryfast.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-veryfast_firstpass.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-veryslow.ffpreset" />
+    <Content Remove="C:\Users\Kotik\.nuget\packages\ffmpegcore\2.2.6\contentFiles\any\netstandard2.0\FFMPEG\bin\presets\libx264-veryslow_firstpass.ffpreset" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FFMpegCore" Version="2.2.6" />
   </ItemGroup>
 

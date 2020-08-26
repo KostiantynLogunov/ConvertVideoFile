@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "V2oXUTDYUyRexdUL4QMoCjs5lQe7nCq8zV7Sl5ObroXfW4sNfh8JUoGPt8nJpVXFUitJEeGd0VQ5m+0OpSJqAg==",
+  "success": true,
+  "projectFilePath": "C:\\devrain\\FFmpeg\\CompressVideo\\CompressVideo\\CompressVideo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kotik\\.nuget\\packages\\ffmpegcore\\2.2.6\\ffmpegcore.2.2.6.nupkg.sha512",
+    "C:\\Users\\Kotik\\.nuget\\packages\\instances\\1.6.0\\instances.1.6.0.nupkg.sha512",
+    "C:\\Users\\Kotik\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Kotik\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Kotik\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Kotik\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}

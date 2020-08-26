@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CompressVideo.BackgroundTasks;
+using CompressVideo.Services;
 using FFMpegCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -15,8 +16,6 @@ namespace CompressVideo
 {
     public class Startup
     {
-
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -31,6 +30,7 @@ namespace CompressVideo
             services.AddSingleton<IBackgroundQueue, BackgroundQueue>();
             services.AddControllersWithViews();
             //services.AddMvc();
+            services.AddTransient<VideoFileService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
