@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 using System.Net.Http;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
-using CompressVideo.Services;
+using CompresVideo.Services;
 
 namespace CompresVideo
 {

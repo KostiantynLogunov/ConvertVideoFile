@@ -12,7 +12,6 @@ C:\devrain\FFmpeg\CompressVideo\CompressVideo\bin\Debug\netcoreapp3.1\CompressVi
 C:\devrain\FFmpeg\CompressVideo\CompressVideo\bin\Debug\netcoreapp3.1\FFMpegCore.dll
 C:\devrain\FFmpeg\CompressVideo\CompressVideo\bin\Debug\netcoreapp3.1\Instances.dll
 C:\devrain\FFmpeg\CompressVideo\CompressVideo\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-C:\devrain\FFmpeg\CompressVideo\CompressVideo\obj\Debug\netcoreapp3.1\CompressVideo.csprojAssemblyReference.cache
 C:\devrain\FFmpeg\CompressVideo\CompressVideo\obj\Debug\netcoreapp3.1\CompressVideo.AssemblyInfoInputs.cache
 C:\devrain\FFmpeg\CompressVideo\CompressVideo\obj\Debug\netcoreapp3.1\CompressVideo.AssemblyInfo.cs
 C:\devrain\FFmpeg\CompressVideo\CompressVideo\obj\Debug\netcoreapp3.1\CompressVideo.csproj.CoreCompileInputs.cache

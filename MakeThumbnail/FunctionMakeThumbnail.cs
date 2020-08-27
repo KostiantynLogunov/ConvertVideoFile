@@ -4,7 +4,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
-using CompressVideo.Services;
+using CompresVideo.Services;
 using System.Linq;
 using System.Net.Http;
 
