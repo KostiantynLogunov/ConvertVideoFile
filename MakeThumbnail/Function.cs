@@ -3,16 +3,16 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using System.Net.Http;
-using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using CompresVideo.Services;
+using System.Linq;
+using System.Net.Http;
 
-namespace CompresVideo
+namespace MakeThumbnail
 {
-    public static class FunctionCompresVideo
+    public static class Function
     {
-        [FunctionName("function-compres-video")]
+        [FunctionName("function-make-thumbnail")]
         public static async Task<HttpResponseMessage> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
@@ -20,7 +20,7 @@ namespace CompresVideo
             var videoFile = req.Form.Files.First();
 
             var services = new ServiceCollection();
-
+            
             services.AddTransient<VideoFileService>();
             services.AddTransient<ProcessFile>();
 
@@ -28,7 +28,7 @@ namespace CompresVideo
 
             var processFile = provider.GetService<ProcessFile>();
 
-            var result = await processFile.GetCompressedVideoAsync(videoFile);
+            var result = await processFile.GetThumbnailAsync(videoFile);
 
             return result;
         }

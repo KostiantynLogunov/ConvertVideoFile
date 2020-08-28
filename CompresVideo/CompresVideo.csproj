@@ -2,6 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <UserSecretsId>ed959f0e-8b96-4a2b-ab2f-9bc72c7fdfe8</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="ffmpeg\ffmpeg.exe" />
