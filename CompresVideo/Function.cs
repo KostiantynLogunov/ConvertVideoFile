@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using CompresVideo.Services;
+using FFMpegCore;
 
 namespace CompresVideo
 {
@@ -15,8 +16,12 @@ namespace CompresVideo
         [FunctionName("function-compres-video")]
         public static async Task<HttpResponseMessage> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            ILogger log)
+            ILogger log, ExecutionContext context)
         {
+            var dirApp = context.FunctionAppDirectory;
+
+            FFMpegOptions.Configure(new FFMpegOptions { RootDirectory = dirApp + @"\\ffmpeg", TempDirectory = dirApp });
+
             var videoFile = req.Form.Files.First();
 
             var services = new ServiceCollection();
@@ -28,7 +33,7 @@ namespace CompresVideo
 
             var processFile = provider.GetService<ProcessFile>();
 
-            var result = await processFile.GetCompressedVideoAsync(videoFile);
+            var result = await processFile.GetCompressedVideoAsync(videoFile, dirApp);
 
             return result;
         }

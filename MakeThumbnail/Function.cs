@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using CompresVideo.Services;
 using System.Linq;
 using System.Net.Http;
+using FFMpegCore;
 
 namespace MakeThumbnail
 {
@@ -15,8 +16,12 @@ namespace MakeThumbnail
         [FunctionName("function-make-thumbnail")]
         public static async Task<HttpResponseMessage> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            ILogger log)
+            ILogger log, ExecutionContext context)
         {
+            var dirApp = context.FunctionAppDirectory;
+
+            FFMpegOptions.Configure(new FFMpegOptions { RootDirectory = dirApp + @"\\ffmpeg", TempDirectory = dirApp });
+
             var videoFile = req.Form.Files.First();
 
             var services = new ServiceCollection();
@@ -28,7 +33,7 @@ namespace MakeThumbnail
 
             var processFile = provider.GetService<ProcessFile>();
 
-            var result = await processFile.GetThumbnailAsync(videoFile);
+            var result = await processFile.GetThumbnailAsync(videoFile, dirApp);
 
             return result;
         }

@@ -16,9 +16,9 @@ namespace CompresVideo
             _videoFileService = videoFileService;
         }
 
-        public async Task<HttpResponseMessage> GetCompressedVideoAsync(IFormFile videoFile)
+        public async Task<HttpResponseMessage> GetCompressedVideoAsync(IFormFile videoFile, string dirApp)
         {
-            var streamVideo = await _videoFileService.ConvertVideo(videoFile);
+            var streamVideo = await _videoFileService.ConvertVideo(videoFile, dirApp);
             
             if (streamVideo == null)
             {

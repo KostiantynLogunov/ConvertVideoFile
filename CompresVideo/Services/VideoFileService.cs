@@ -2,7 +2,6 @@
 using FFMpegCore.Enums;
 using Microsoft.AspNetCore.Http;
 using System;
-using System.Drawing;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -11,13 +10,6 @@ namespace CompresVideo.Services
     public class VideoFileService
     {
         private string _dir;
-
-        public VideoFileService()
-        {
-            _dir =  Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-            FFMpegOptions.Configure(new FFMpegOptions { RootDirectory = _dir + @"\\ffmpeg", TempDirectory = _dir });
-        }
-
         public async Task<string> GetFileNameAndSaveFile(IFormFile file)
         {
             //TODO fileName
@@ -43,41 +35,10 @@ namespace CompresVideo.Services
             return fileName;
         }
 
-        public async Task<FileStream> MakeThumbnail(IFormFile videoFile, int timeThumbnail = 5)
+        public async Task<FileStream> ConvertVideo(IFormFile file, string dir)
         {
-            var fileName = await GetFileNameAndSaveFile(videoFile);
-           
-            if (String.IsNullOrEmpty(fileName))
-            {
-                return null;
-            }
+            _dir = dir;
 
-            var input = Path.Combine(_dir, fileName + ".mp4");
-            var outputPng = Path.Combine(_dir, fileName + ".png");
-            var mediaInfo = await FFProbe.AnalyseAsync(input);
-
-            var hConvert = mediaInfo.PrimaryVideoStream.Height;
-            var wConvert = mediaInfo.PrimaryVideoStream.Width;
-
-            try
-            {
-                FFMpeg.Snapshot(mediaInfo, outputPng, new Size(wConvert, hConvert), TimeSpan.FromSeconds(timeThumbnail));
-                var stream = new FileStream(outputPng, FileMode.Open);
-
-                return stream;
-            }
-            catch (Exception)
-            {
-                //File.Delete(outputPng);
-                return null;
-                //throw;
-            }
-            /*File.Delete(outputPng);
-            File.Delete(input);*/
-        }
-
-        public async Task<FileStream> ConvertVideo(IFormFile file)
-        {
             var fileName = await GetFileNameAndSaveFile(file);
 
             if (String.IsNullOrEmpty(fileName))

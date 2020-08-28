@@ -16,9 +16,9 @@ namespace MakeThumbnail
             _videoFileService = videoFileService;
         }
 
-        public async Task<HttpResponseMessage> GetThumbnailAsync(IFormFile videoFile)
+        public async Task<HttpResponseMessage> GetThumbnailAsync(IFormFile videoFile, string dirApp)
         {
-            var streamPng = await _videoFileService.MakeThumbnail(videoFile);
+            var streamPng = await _videoFileService.MakeThumbnail(videoFile, dirApp);
             
             if (streamPng == null)
             {

@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressVideo", "CompressVi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{B939038D-F915-4816-AB5B-FB34CFED303D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeThumbnail", "MakeThumbnail\MakeThumbnail.csproj", "{572052AC-3D23-49EB-AA76-E96EE4777726}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeThumbnail", "MakeThumbnail\MakeThumbnail.csproj", "{572052AC-3D23-49EB-AA76-E96EE4777726}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompresVideo", "CompresVideo\CompresVideo.csproj", "{8519A237-84AC-442F-AE5F-09FB15ACBA14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompresVideo", "CompresVideo\CompresVideo.csproj", "{8519A237-84AC-442F-AE5F-09FB15ACBA14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionProcessVideo", "FunctionProcessVideo\FunctionProcessVideo.csproj", "{3E1753D7-0E19-4F3B-9270-4A6EAD1B32F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{8519A237-84AC-442F-AE5F-09FB15ACBA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8519A237-84AC-442F-AE5F-09FB15ACBA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8519A237-84AC-442F-AE5F-09FB15ACBA14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E1753D7-0E19-4F3B-9270-4A6EAD1B32F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E1753D7-0E19-4F3B-9270-4A6EAD1B32F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E1753D7-0E19-4F3B-9270-4A6EAD1B32F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E1753D7-0E19-4F3B-9270-4A6EAD1B32F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{572052AC-3D23-49EB-AA76-E96EE4777726} = {B939038D-F915-4816-AB5B-FB34CFED303D}
 		{8519A237-84AC-442F-AE5F-09FB15ACBA14} = {B939038D-F915-4816-AB5B-FB34CFED303D}
+		{3E1753D7-0E19-4F3B-9270-4A6EAD1B32F4} = {B939038D-F915-4816-AB5B-FB34CFED303D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B0B9EDB-D382-43CC-AD44-936C113AAD55}
