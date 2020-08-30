@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeThumbnail", "MakeThumbn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompresVideo", "CompresVideo\CompresVideo.csproj", "{8519A237-84AC-442F-AE5F-09FB15ACBA14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionProcessVideo", "FunctionProcessVideo\FunctionProcessVideo.csproj", "{3E1753D7-0E19-4F3B-9270-4A6EAD1B32F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionProcessVideo", "FunctionProcessVideo\FunctionProcessVideo.csproj", "{3E1753D7-0E19-4F3B-9270-4A6EAD1B32F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

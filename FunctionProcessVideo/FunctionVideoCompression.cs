@@ -27,7 +27,7 @@ namespace CompresVideo
 
             var services = new ServiceCollection();
 
-            services.AddTransient<VideoFileService>();
+            services.AddTransient<VideoFileService>(x => new VideoFileService(log));
             services.AddTransient<ProcessFile>();
 
             var provider = services.BuildServiceProvider();

@@ -1,6 +1,7 @@
 ﻿using FFMpegCore;
 using FFMpegCore.Enums;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Drawing;
 using System.IO;
@@ -10,7 +11,15 @@ namespace CompresVideo.Services
 {
     public class VideoFileService
     {
+        const int Height480p480 = 480;
+        const int Width480p720 = 720;
         private string _dir;
+        private ILogger _log;
+
+        public VideoFileService(ILogger log)
+        {
+            _log = log;
+        }
 
         public async Task<string> GetFileNameAndSaveFile(IFormFile file)
         {
@@ -31,8 +40,9 @@ namespace CompresVideo.Services
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                _log.LogError(e.Message);
                 //TODO
                 //throw;
             }
@@ -66,9 +76,9 @@ namespace CompresVideo.Services
 
                 return stream;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                //File.Delete(outputPng);
+                _log.LogError(e.Message);
                 return null;
                 //throw;
             }
@@ -105,10 +115,10 @@ namespace CompresVideo.Services
                 maxSize = mediaInfo.PrimaryVideoStream.Width;
             }
 
-            if (maxSize > 858)
+            if (maxSize > Width480p720)
             {
-                hConvert = 858;
-                wConvert = 480;
+                hConvert = Width480p720;
+                wConvert = Height480p480;
             }
             else
             {
@@ -135,8 +145,9 @@ namespace CompresVideo.Services
 
                 return stream;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                _log.LogError(e.Message);
                 return null;
                 //throw;
             }
